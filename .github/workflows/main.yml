@@ -54,7 +54,7 @@ jobs:
         port: ${{ secrets.PORT }}
         script: |
           cd /home/realworld
-          https://github.com/luckmiss-wb/releases/latest/download/release.tgz -O release.tgz
+          https://github.com/luckmiss-wb/realworld-nuxtjs/releases/latest/download/release.tgz -O release.tgz
           tar zxvf release.tgz
           npm install --production
           pm2 reload pm2.config.json
